@@ -44,7 +44,7 @@ const CarDetailsSection = () => {
       <div className="flex flex-col lg:flex-row gap-6 p-6 bg-white rounded-lg shadow-md mb-10">
         {/* Image Gallery */}
         <div className="lg:w-1/2">
-          <div className="relative bg-blue-200 rounded-lg overflow-hidden">
+          <div className="relative bg-blue-00 rounded-lg overflow-hidden">
             <Image
               src={carDetails.image}
               alt={carDetails.name}
@@ -108,7 +108,16 @@ const CarDetailsSection = () => {
               <p className="text-sm text-gray-500 line-through">$100.00</p>
             </div>
             <div className="flex space-x-2 md:space-x-8 md:mr-14">
-            <Link href="/payments">
+            {/* <Link   
+             href="/payments"
+             >
+              <button className="bg-blue-600 text-white px-4 md:px-6 py-2 rounded-md hover:bg-blue-800 transition">
+                Rent Now
+              </button>
+            </Link> */}
+              <Link   
+             href="/details"
+             >
               <button className="bg-blue-600 text-white px-4 md:px-6 py-2 rounded-md hover:bg-blue-800 transition">
                 Rent Now
               </button>

@@ -103,7 +103,7 @@ const Cart = () => {
                 </div>
                 <Link href={"/payments"}>
                 <button
-                  className="w-full bg-[#13276b] hover:bg-blue-80 text-white font-bold py-3 px-6 rounded-lg transition-all ease-in-out"
+                  className="w-full bg-[#13276b] hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all ease-in-out"
                 >
                   Proceed to Checkout
                 </button>

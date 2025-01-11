@@ -100,7 +100,8 @@ export default function PopularCars() {
           />
           <div className="flex md:flex-row flex-col justify-between items-center mt-4">
             <p className="text-lg font-semibold">{car.price}</p>
-            <Link key={car.id} href={`/cars-details/${car.id}`}>
+            <Link key={car.id} href=    {`/cars-details/${car.id}`}>
+            {/* <Link href="/detailcars"> */}
               <button className="bg-blue-600 text-white md:px-6 px-2 md:py-2 py-1 md:rounded-lg rounded-sm hover:bg-blue-600 md:text-[16px] text-[11px]">
                 Rent Now
               </button>

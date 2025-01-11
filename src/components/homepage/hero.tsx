@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Left Card */}
             <div
-              className="bg-blue-500 p-6 rounded-lg shadow-md bg-cover bg-center"
+              className="bg-blue-600 p-6 rounded-lg shadow-md bg-cover bg-center"
               style={{
                 backgroundImage: 'url("/images/bl.jpg")',
               }}
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
 
             {/* Right Card */}
             <div
-              className="bg-blue-500 p-6 rounded-lg shadow-md bg-cover bg-center"
+              className="bg-blue-600 p-6 rounded-lg shadow-md bg-cover bg-center"
               style={{
                 backgroundImage: 'url("/images/br.jpg")',
               }}

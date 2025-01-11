@@ -9,7 +9,7 @@ const Left = () => {
       <div className="flex items-center mb-6">
         {/* Car Image */}
         <Image
-          src="/car.jpg"
+          src="/rolls2.png"
           alt="Car"
           width={100}
           height={60}
