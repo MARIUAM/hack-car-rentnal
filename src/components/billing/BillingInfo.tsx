@@ -58,7 +58,7 @@ const BillingInfo = () => {
       setBillingId(data.billingId);
       setSession(data.session); // Store session data
       resetForm(); // Clear the form
-    } catch (err) {
+    // } catch (err) {
       // On error
       setError("An error occurred. Please try again.");
     } finally {

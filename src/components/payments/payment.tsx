@@ -4,10 +4,10 @@ import {
   FaCcVisa,
   FaCcPaypal,
   FaCheckCircle,
-  FaUser,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaCity,
+  // FaUser,
+  // FaPhone,
+  // FaMapMarkerAlt,
+  // FaCity,
 } from "react-icons/fa";
 import RentalInfo from "../rentnal/RentalInfo";
 import BillingInfo from "../billing/BillingInfo"; // Import the BillingInfo component

@@ -11,8 +11,8 @@ const PaymentForm = () => {
   const stripe = useStripe();
   const elements = useElements();
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+  const [error, setError] = useState(""); // Error message for UI
+  const [success, setSuccess] = useState(""); // Success message for UI
 
   const handlePayment = async () => {
     if (!stripe || !elements) {
@@ -29,13 +29,13 @@ const PaymentForm = () => {
       if (!cardElement) {
         throw new Error("Card element not found.");
       }
-      const { error, paymentMethod } = await stripe.createPaymentMethod({
+      const { error: stripeError, paymentMethod } = await stripe.createPaymentMethod({
         type: 'card',
         card: cardElement,
       });
 
-      if (error) {
-        throw new Error(error.message || "Payment failed.");
+      if (stripeError) {
+        throw new Error(stripeError.message || "Payment failed.");
       }
 
       // Call your backend API to process the payment
@@ -58,10 +58,10 @@ const PaymentForm = () => {
       }
 
       // On success
-      setSuccess(data.message);
+      setSuccess("Payment successful! Thank you.");
     } catch (err) {
       // On error
-      setError((err instanceof Error ? err.message : "Payment failed. Please try again."));
+      setError(err instanceof Error ? err.message : "Payment failed. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -70,6 +70,8 @@ const PaymentForm = () => {
   return (
     <div>
       <CardElement className="p-3 border border-gray-300 rounded-lg" />
+      {error && <p className="text-red-500 mt-2">{error}</p>}
+      {success && <p className="text-green-500 mt-2">{success}</p>}
       <button
         onClick={handlePayment}
         disabled={loading || !stripe}

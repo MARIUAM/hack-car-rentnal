@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaStar, FaHeart } from "react-icons/fa";
-
+import { FaStar, } from "react-icons/fa";
+// FaHeart
 const CarDetailsSection = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-6 p-6 bg-white rounded-lg shadow-md">
@@ -36,7 +36,7 @@ const CarDetailsSection = () => {
             width={900}
             height={900}
           />
-          <img
+          <Image
             src="/o.png"
             alt="Car Dashboard"
             className="w-20 h-20 rounded-lg object-cover border border-gray-200"
