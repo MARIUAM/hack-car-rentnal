@@ -30,12 +30,12 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-blue-500">
+                <Link href="https://maryam-hack-9hg5c7fld-marium-s-projects.vercel.app" className="text-sm text-gray-600 hover:text-blue-500">
                   Partnership
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-blue-500">
+                <Link href="https://maryam-hack-9hg5c7fld-marium-s-projects.vercel.app" className="text-sm text-gray-600 hover:text-blue-500">
                   Business Relation
                 </Link>
               </li>
@@ -74,22 +74,22 @@ const Footer: React.FC = () => {
             <h2 className="text-lg font-semibold text-gray-800">Socials</h2>
             <ul className="space-y-1">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-blue-500">
+                <Link href="https://discord.com/" className="text-sm text-gray-600 hover:text-blue-500">
                   Discord
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-blue-500">
+                <Link href="https://www.instagram.com/?hl=en" className="text-sm text-gray-600 hover:text-blue-500">
                   Instagram
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-blue-500">
+                <Link href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyIiOiIiLCJteCI6IjIifQ%3D%3D%22%7D" className="text-sm text-gray-600 hover:text-blue-500">
                   Twitter
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-blue-500">
+                <Link href="https://www.facebook.com/" className="text-sm text-gray-600 hover:text-blue-500">
                   Facebook
                 </Link>
               </li>
