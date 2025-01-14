@@ -115,7 +115,7 @@ export default async function Hero() {
     }
   `);
 
-  console.log(res);
+  // console.log(res);
 
   return (
     <div className="container mx-auto px-4 py-8">

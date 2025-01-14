@@ -72,9 +72,9 @@ const Hero: React.FC = () => {
             {/* Left Card */}
             <div
               className="bg-blue-600 p-6 rounded-lg shadow-md bg-cover bg-center"
-              style={{
-                backgroundImage: 'url("/images/bl.jpg")',
-              }}
+              // style={{
+              //   backgroundImage: 'url("/images/bl.jpg")',
+              // }}
             >
               <h2 className="text-3xl font-bold text-white mb-2">
                 The Best Platform for Car Rental
@@ -98,9 +98,9 @@ const Hero: React.FC = () => {
             {/* Right Card */}
             <div
               className="bg-blue-600 p-6 rounded-lg shadow-md bg-cover bg-center"
-              style={{
-                backgroundImage: 'url("/images/br.jpg")',
-              }}
+              // style={{
+              //   backgroundImage: 'url("/images/br.jpg")',
+              // }}
             >
               <h2 className="text-3xl font-bold text-white mb-2">
                 Easy way to rent a car at a low price
