@@ -62,6 +62,7 @@ const Header = () => {
           </div>
         </Link>
 
+        {/* Cart Icon with Item Count */}
         <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center">
           <Link href={"/cart"}>
             <div className="relative">
@@ -114,6 +115,22 @@ const Header = () => {
                 Favorites
               </div>
             </Link>
+
+            <Link href="/cart">
+              <div
+                className="text-xl text-gray-600 py-2 hover:text-blue-600 flex items-center"
+                onClick={toggleMenu}
+              >
+                <FiShoppingCart className="mr-2" />
+                <span>Cart</span>
+                {totalItems > 0 && (
+                  <span className="ml-2 bg-blue-500 text-gray-300 text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">
+                    {totalItems}
+                  </span>
+                )}
+              </div>
+            </Link>
+
             <Link href="/">
               <div
                 className="text-xl text-gray-600 py-2 hover:text-blue-600"
@@ -122,6 +139,7 @@ const Header = () => {
                 Notifications
               </div>
             </Link>
+
             <Link href="/">
               <div
                 className="text-xl text-gray-600 py-2 hover:text-blue-600"
@@ -130,6 +148,7 @@ const Header = () => {
                 Settings
               </div>
             </Link>
+
             <Link href="/">
               <div
                 className="text-xl text-gray-600 py-2 hover:text-blue-600"
