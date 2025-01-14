@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
               </h2>
               <p className="text-white mb-6">
                 Ease of doing a car rental safely and reliably. Of course, at a
-                low price.
+                low Price marii.
               </p>
               <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
                 Rental Car
