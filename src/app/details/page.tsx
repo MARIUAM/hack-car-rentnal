@@ -7,20 +7,15 @@
 // import PopularCars from "@/components/card1";
 // import Link from "next/link";
 
-
 // const Page = () => {
 //   return (
 
-    
 //     <div className="flex flex-col min-h-screen bg-gray-50">
 //       {/* Main content area */}
 //       <div className="flex flex-1">
 //         {/* Sidebar */}
 //         <Sidebar />
 
-
-
-        
 //         <div className="flex-1 p-6 space-y-8">
 
 //           <Reviews />
@@ -64,68 +59,63 @@
 
 // export default Page;
 
-
-
-
 import Sidebar from "@/components/sidebar";
 
 import React from "react";
 import PopularCar from "@/components/card1";
-import RecommendedCars from "@/components/homepage/cards1";
+
 import CarDetailsSection from "@/components/detail/detail";
 import Reviews from "../cars-details/review";
+import Card1 from "@/components/card1";
 
 
 
 const Page = () => {
   return (
     <div>
-
       <div className="flex ">
-      <Sidebar  />
-      <CarDetailsSection />
+        <Sidebar />
+        <CarDetailsSection />
       </div>
 
-
-
-      <div className="flex flex-col h-screen">
-      {/* Header */}
       
+      
+      <div className="flex flex-col h-screen">
+        {/* Header */}
 
-      {/* Main content area */}
-      <div className="flex flex-1">
-        {/* Sidebar */}
-       
+        {/* Main content area */}
+        <div className="flex flex-1">
+          {/* Sidebar */}
 
-        {/* Main content */}
-        <div className="flex-1 p-6">
-         
-          <Reviews/>
-          <div className="flex items-center justify-between bg-gray-50 p-4 rounded-md shadow-sm">
-      <h2 className="text-sm font-medium text-gray-500">Popular Car</h2>
-      <a
-        href="#"
-        className="text-sm font-medium text-blue-600 hover:underline"
-      >
-        View All
-      </a>
-    </div>
-          <PopularCar/>
-          <div className="flex items-center justify-between bg-gray-50 p-4 rounded-md shadow-sm">
-      <h2 className="text-sm font-medium text-gray-500">Recommendation Car</h2>
-      <a
-        href="#"
-        className="text-sm font-medium text-blue-600 hover:underline"
-      >
-        View All
-      </a>
-    </div>
-          <RecommendedCars/>
+          {/* Main content */}
+          <div className="flex-1 p-6">
+            <Reviews />
+            <div className="flex items-center justify-between bg-gray-50 p-4 rounded-md shadow-sm">
+              <h2 className="text-sm font-medium text-gray-500">Popular Car</h2>
+              <a
+                href="#"
+                className="text-sm font-medium text-blue-600 hover:underline"
+              >
+                View All
+              </a>
+            </div>
+
+            <PopularCar />
+            <div className="flex items-center justify-between bg-gray-50 p-4 rounded-md shadow-sm">
+              <h2 className="text-sm font-medium text-gray-500">
+                Recommendation Car
+              </h2>
+              <a
+                href="#"
+                className="text-sm font-medium text-blue-600 hover:underline"
+              >
+                View All
+              </a>
+            </div>
+           <Card1/>
+          </div>
         </div>
       </div>
-
-      
-    </div>
     </div>
   );
 };

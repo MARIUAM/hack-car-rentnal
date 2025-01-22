@@ -1,9 +1,11 @@
 "use client";
 
 import { useCart } from "@/components/cart-component/CartContext";
-import Link from "next/link";
 import React from "react";
 import { FiTrash2 } from "react-icons/fi";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY!);
 
 const Cart = () => {
   const { cartItems, addToCart, decreaseQuantity, removeFromCart } = useCart();
@@ -12,6 +14,40 @@ const Cart = () => {
     (total, item) => total + item.price * item.quantity,
     0
   );
+
+  const handleCheckout = async () => {
+    const stripe = await stripePromise;
+
+    if (!stripe) {
+      console.error("Stripe.js has not loaded properly.");
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ cartItems }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to create checkout session");
+      }
+
+      const { sessionId } = await response.json();
+
+      if (sessionId) {
+        const { error } = await stripe.redirectToCheckout({ sessionId });
+        if (error) {
+          console.error("Error redirecting to checkout:", error);
+        }
+      } else {
+        console.error("No session ID returned.");
+      }
+    } catch (error) {
+      console.error("Checkout error:", error);
+    }
+  };
 
   return (
     <div>
@@ -101,13 +137,12 @@ const Cart = () => {
                     ${totalPrice.toFixed(2)}
                   </span>
                 </div>
-                <Link href={"/payments"}>
-                <button
-                  className="w-full bg-[#13276b] hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all ease-in-out"
-                >
-                  Proceed to Checkout
-                </button>
-                </Link>
+                  <button
+                    className="w-full bg-[#13276b] hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all ease-in-out"
+                    onClick={handleCheckout}
+                  >
+                    Proceed to Checkout
+                  </button>
               </div>
             </div>
           </div>

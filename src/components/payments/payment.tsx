@@ -56,7 +56,7 @@ const CheckoutPage = () => {
                   I have read and accept the terms and conditions.
                 </span>
               </label>
-              <button className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-md flex items-center justify-center space-x-2">
+              <button className="w-full mt-4 bg-white-300 hover:bg-blue-00 text-white p-3 rounded-md flex items-center justify-center space-x-2">
                 <FaCheckCircle />
                 <span>Confirm Booking</span>
               </button>

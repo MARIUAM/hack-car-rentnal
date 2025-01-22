@@ -1,18 +1,32 @@
 import React from "react";
 import Hero from "../components/homepage/hero";
 import Cards from "../components/homepage/cards";
-import Cards1 from "../components/homepage/cards1";
 import Cards2 from "../components/homepage/cards2";
 import Hero1 from "./Hero1";
+import Hero2 from "./hero2";
+import Hero3 from "./hero3";
+import Hero4 from "./hero4";
+
+
+
+
 
 export default function Page() {
   return (
     <div>
       <Hero />
-      <Cards />
-      <Cards1 />
+      <Hero1 />
+      <Hero2/>
+      <Hero3/>
+      <Hero4/>
+      {/* <Cards/> */}
+     <Cards/>                                                                                                                    
       <Cards2 />
-    /  <Hero1 />
+     
+     
+    {/* <CommentSection /> */}
+  
+   
     </div>
   );
 }

@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/homepage/header";
 import Footer from "../components/homepage/footer";
-import Navbar from "../components/homepage/navbar";
+
 import { CartProvider } from "@/components/cart-component/CartContext";
 import { Poppins } from "next/font/google";
+
+import Navbar from "@/components/homepage/navbar";
+import DynamicComments from "@/components/billing/comments/page";
+
+
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,11 +33,17 @@ export default function RootLayout({
         <body>
           <Header />
           <Navbar />
+          
           {children}
-      
+          <DynamicComments/>
+          <Footer />
+       
+
+          {/* <Hero/> */}
         </body>
-        <Footer />
       </html>
     </CartProvider>
+    
+    
   );
 }

@@ -71,7 +71,7 @@ const PaymentForm = () => {
     <div>
       <CardElement className="p-3 border border-gray-300 rounded-lg" />
       {error && <p className="text-red-500 mt-2">{error}</p>}
-      {success && <p className="text-green-500 mt-2">{success}</p>}
+      {success && <p className="text-blue-00 mt-2">{success}</p>}
       <button
         onClick={handlePayment}
         disabled={loading || !stripe}

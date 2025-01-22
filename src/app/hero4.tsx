@@ -34,7 +34,7 @@ function urlFor(source: any) {
 
 export default async function Hero() {
   const res: IProduct[] = await client.fetch(`
-    *[_type == "car"][0...4]{
+    *[_type == "car"][12...16]{
   _id,
   _type,
   _rev,
@@ -63,7 +63,7 @@ export default async function Hero() {
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-8 bg-gray-50">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-2xl font-bold">Popular Products</h2>
+        <h2 className="text-2xl font-bold">Recommended Cars</h2>
         <Link href="/categories" className="text-blue-600 hover:underline">
           View All
         </Link>

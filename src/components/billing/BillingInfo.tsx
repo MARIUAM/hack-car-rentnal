@@ -92,7 +92,7 @@ const BillingInfo = () => {
 
         {/* Display success message */}
         {success && (
-          <div className="mb-4 p-4 bg-green-100 text-green-600 rounded-lg">
+          <div className="mb-4 p-4 bg-green-100 text-blue-700 rounded-lg">
             {success}
           </div>
         )}
