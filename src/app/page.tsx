@@ -18,6 +18,12 @@ export default function Page() {
       {/* <Cards/> */}
       <Cards />
       <Cards2 />
+<<<<<<< HEAD
+=======
+     
+     
+    {/* <CommentSection /> */}
+>>>>>>> 20986df0d5737e4a87fccd1ee783bbef87997926
 
       <div>
         <script
@@ -25,8 +31,13 @@ export default function Page() {
           async
         ></script>
       </div>
+<<<<<<< HEAD
 
       {/* <CommentSection /> */}
+=======
+  
+   
+>>>>>>> 20986df0d5737e4a87fccd1ee783bbef87997926
     </div>
   );
 }
