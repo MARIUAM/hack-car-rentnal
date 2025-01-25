@@ -18,26 +18,12 @@ export default function Page() {
       {/* <Cards/> */}
       <Cards />
       <Cards2 />
-<<<<<<< HEAD
-=======
-     
-     
-    {/* <CommentSection /> */}
->>>>>>> 20986df0d5737e4a87fccd1ee783bbef87997926
 
       <div>
-        <script
-          src="//code.tidio.co/r2vfhhqwfnszgnkbuf0vyw5njhaiqieu.js"
-          async
-        ></script>
+      <script src="//code.tidio.co/pkhanawcqi6ahqeewqoo3ehvu2qkpt9n.js" async></script>
       </div>
-<<<<<<< HEAD
 
       {/* <CommentSection /> */}
-=======
-  
-   
->>>>>>> 20986df0d5737e4a87fccd1ee783bbef87997926
     </div>
   );
 }
