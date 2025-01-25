@@ -25,6 +25,13 @@ export default function Page() {
      
      
     {/* <CommentSection /> */}
+
+      <div>
+        <script
+          src="//code.tidio.co/r2vfhhqwfnszgnkbuf0vyw5njhaiqieu.js"
+          async
+        ></script>
+      </div>
   
    
     </div>
