@@ -20,11 +20,7 @@ export default function Page() {
       <Cards2 />
 
       <div>
-<<<<<<< HEAD
       <script src="//code.tidio.co/pkhanawcqi6ahqeewqoo3ehvu2qkpt9n.js" async></script>
-=======
-        <script src="//code.tidio.co/pkhanawcqi6ahqeewqoo3ehvu2qkpt9n.js" async></script>
->>>>>>> 9ed248b0b58e6eab499c7e2009ffb6087349b87c
       </div>
 
       {/* <CommentSection /> */}
