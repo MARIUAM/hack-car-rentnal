@@ -78,6 +78,11 @@ const Page = () => {
         <CarDetailsSection />
       </div>
 
+
+      <div>
+        
+      </div>
+
       
       
       <div className="flex flex-col h-screen">
@@ -121,3 +126,4 @@ const Page = () => {
 };
 
 export default Page;
+ 
